@@ -18,12 +18,21 @@ export const Container = styled.div`
 `
 
 export const Title = styled.div`
-
+    cursor: pointer;
     font-size:1.5rem;
 `
 export const SeachBox = styled.div`
     display:flex;
     margin-left: 7rem;
+    @media screen and (max-width: 860px) {
+        margin-left:5rem;
+    }
+    @media screen and (max-width: 680px) {
+        margin-left:2rem;
+    }
+    @media screen and (max-width: 640px) {
+        display:none;
+    }
 `
 export const PlaceholderBox = styled.div`
     position:absolute;
@@ -91,5 +100,9 @@ export const Icon = styled.div`
     svg{
         width:1.75rem;
         height:1.75rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+        margin-right:1.5rem;
     }
 `

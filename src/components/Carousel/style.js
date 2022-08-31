@@ -14,6 +14,8 @@ export const Btn = styled.div`
     gap:1rem;
     overflow:hidden;
     margin-left:1rem;
+    cursor: pointer;
+
 
 `
 export const User = styled.div`
@@ -27,7 +29,11 @@ export const Circle = styled.div`
     width:66px;
     height:66px;
     background:rgb(54,54,54);
+
 `
 export const Name = styled.div`
     color:rgb(250,250,250);
+    font-size:13px;
+    font-weight:400;
+    line-height:16px;
 `

@@ -15,11 +15,17 @@ export const Top = styled.div`
     padding:1rem;
     display:flex;
     justify-content:space-between;
+
+    svg{
+        cursor: pointer;
+    }
 `
 export const TitleBox = styled.div`
     display:flex;
     align-items:center;
     gap:.5rem;
+    cursor: pointer;
+
 `
 
 export const CircleImg = styled.div`
@@ -63,12 +69,16 @@ export const Like = styled.span`
     display:block;
     padding:0px 12px 0px 12px;
     margin-bottom:8px;
+    font-weight:700;
+
 `
 export const User = styled.span`
     font-size:bold;    
     display:block;
     padding:0px 12px 0px 12px;
     margin-bottom:8px;
+    font-weight:700;
+
 `
 export const Time = styled.span`
     font-size:11px;    
@@ -76,6 +86,8 @@ export const Time = styled.span`
     display:block;
     padding:0px 12px 0px 12px;
     margin-bottom:8px;
+    font-weight:700;
+
 `
 export const Bottom = styled.div`
     height:41px;
@@ -95,6 +107,7 @@ export const Message = styled.input`
     border:none;
     display:flex;
     align-items:center;
+    outline:none;
 `
 export const PostButton = styled.div`
     cursor: pointer;

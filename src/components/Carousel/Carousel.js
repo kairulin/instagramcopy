@@ -3,23 +3,23 @@ import { Btn, CarouselBox, Circle, Name, User } from './style'
 
 const users = [
     {
-        name: 'No.1'
+        name: 'User1'
     },
     {
-        name: 'No.2'
+        name: 'User2'
     },
     {
-        name: 'No.3'
+        name: 'User3'
     },
     {
-        name: 'No.4'
+        name: 'User4'
     },
     {
-        name: 'No.5'
+        name: 'User5'
     }
     ,
     {
-        name: 'No.6'
+        name: 'User6'
     }
 ]
 
@@ -28,13 +28,9 @@ const Carousel = () => {
         <CarouselBox>
             <Btn>
                 {users.map((item, index) => (
-                    <User>
-
-
+                    <User key={index}>
                         <Circle />
-                        <Name key={index}>{item.name}</Name>
-
-
+                        <Name >{item.name}</Name>
                     </User>
                 ))}
 
